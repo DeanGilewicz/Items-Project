@@ -65,3 +65,37 @@ console.log(itemGBP);
 Question 4: Show me how to find which items are made of wood. Please console.log the ones you find.
 
 *****************************************************************************************************************/
+
+// search list of items
+// within that list of items, specifically search for materials
+// when searching each materials property, need items that match wood
+// return items that are made of wood and store in a variable
+// console.log variable
+
+items.forEach(function(a) {
+  a.materials.forEach(function(b){
+    if (b === "wood") {
+      console.log(a.title);
+    };
+  });
+});
+
+
+/****************************************************************************************************************
+Question 5: Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
+
+*****************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************
+Question 6: Show me how to calculate how many items were made by their sellers
+
+*****************************************************************************************************************/
