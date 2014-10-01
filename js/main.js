@@ -12,7 +12,7 @@ Please console.log the average. The average price is $23.62
 var priceArray = [];
 
 // call a function to store price of each item from item list into my array
-var priceList = items.forEach (function(x) {
+var priceList = items.forEach(function(x) {
   priceArray.push(x.price);
 });
 
@@ -44,11 +44,24 @@ console.log(selectedCost);
 
 
 /****************************************************************************************************************
-Question 3: Show me how find the item with a "GBP" currency code and print its name and price.
+Question 3: Show me how to find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
 
 *****************************************************************************************************************/
 
-// go through item list
-// search "GBP" currency mode
-// return matching item
-// show name and price
+// go through item list and search for items matching a GBP currency code. Return matching item(s).
+var currencyGBP = items.filter(function(x) {
+    return x.currency_code === "GBP";
+});
+
+// spit out only the name of item and the price
+var itemGBP = currencyGBP.map(function(y) {
+  return y.title + " $" + y.price;
+});
+
+console.log(itemGBP);
+
+
+/****************************************************************************************************************
+Question 4: Show me how to find which items are made of wood. Please console.log the ones you find.
+
+*****************************************************************************************************************/
