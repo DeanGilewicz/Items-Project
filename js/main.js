@@ -1,5 +1,8 @@
+//array.map(), array.reduce(), array.forEach, array.filter()
+
+
 /****************************************************************************************************************
-Show me how to calculate the average price of all items.
+Question 1: Show me how to calculate the average price of all items.
 
 Please console.log the average. The average price is $23.62
 
@@ -24,9 +27,28 @@ var avg = total / priceArray.length;
 // convert the output to only show to 2 decimal places
 console.log("The average price is $" + avg.toFixed(2));
 
-/****************************************************************************************************************
-Show me how to calculate the average price of all items.
 
-Please console.log the average. The average price is $23.62
+/****************************************************************************************************************
+Question 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 
 *****************************************************************************************************************/
+
+// use a function that allows to select specific range and return items matching that condition
+var selectedCost = items.filter(function(x) {
+  return x.price >=14.00 && x.price <=18.00;
+
+});
+
+console.log("Items that cost between $14.00 USD and $18.00 USD:");
+console.log(selectedCost);
+
+
+/****************************************************************************************************************
+Question 3: Show me how find the item with a "GBP" currency code and print its name and price.
+
+*****************************************************************************************************************/
+
+// go through item list
+// search "GBP" currency mode
+// return matching item
+// show name and price
