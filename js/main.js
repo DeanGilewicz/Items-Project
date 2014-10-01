@@ -1,10 +1,5 @@
-//array.map(), array.reduce(), array.forEach, array.filter()
-
-
 /****************************************************************************************************************
-Question 1: Show me how to calculate the average price of all items.
-
-Please console.log the average. The average price is $23.62
+Question 1: Show me how to calculate the average price of all items. Please console.log the average. The average price is $23.62
 
 *****************************************************************************************************************/
 
@@ -33,7 +28,7 @@ Question 2: Show me how to get an array of items that cost between $14.00 and $1
 
 *****************************************************************************************************************/
 
-// use a function that allows to select specific range and return items matching that condition
+// use a function that allows you to filter through list based on conditions and return items matching
 var selectedCost = items.filter(function(x) {
   return x.price >=14.00 && x.price <=18.00;
 
@@ -86,13 +81,14 @@ Question 5: Show me how to find which items are made of eight or more materials.
 
 *****************************************************************************************************************/
 
+//create variable
+//search through list of items and look at materials. Materials is an array
+// get the number of arrays for materials property of each item
+var material_num = items.filter(function(a) {
+  return a.materials.length >= 8;
+  });
 
-
-
-
-
-
-
+console.log(material_num);
 
 
 /****************************************************************************************************************
