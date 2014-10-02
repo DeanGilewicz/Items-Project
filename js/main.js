@@ -34,7 +34,7 @@ Question 2: Show me how to get an array of items that cost between $14.00 and $1
 // spit out the items that match the condition
 
 var selectedCost = items.filter(function(x) {
-  return x.price >=14.00 && x.price <=18.00;
+  return x.price > 14.00 && x.price < 18.00 && x.currency_code === "USD";
 
 });
 
