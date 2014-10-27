@@ -1,3 +1,3 @@
-## Using JavaScript To Pull Information
+## Using JavaScript To Access Information In An Array
 
-A project that uses JavaScript to pull specific information from a large list (array).
+A project that uses JavaScript to work with specific information in an array.
